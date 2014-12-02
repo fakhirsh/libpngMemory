@@ -10,8 +10,9 @@
 #define __libpngMem__GLDemo__
 
 #include <OpenGLES/ES2/gl.h>
+#include <string>
 
-bool setupGraphics(int w, int h);
+bool setupGraphics(int w, int h, std::string bundlePath);
 
 void renderFrame();
 

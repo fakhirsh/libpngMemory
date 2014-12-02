@@ -18,20 +18,28 @@
 
 #include "GLDemo.h"
 
+#include "Texture.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
+
 static const char gVertexShader[] =
 "attribute vec4 vPosition;\n"
+"attribute vec4 vUV;\n"
+"varying vec2 v_texCoord;\n"
 "void main() {\n"
 "  gl_Position = vPosition;\n"
+"  v_texCoord = vUV.st;\n"
 "}\n";
 
 static const char gFragmentShader[] =
 "precision mediump float;\n"
+"uniform sampler2D sampler2d;\n"
+"varying vec2 v_texCoord;\n"
 "void main() {\n"
-"  gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);\n"
+"  gl_FragColor = texture2D(sampler2d, v_texCoord);\n"
 "}\n";
 
 GLuint loadShader(GLenum shaderType, const char* pSource) {
@@ -95,28 +103,53 @@ GLuint createProgram(const char* pVertexSource, const char* pFragmentSource) {
 
 GLuint gProgram;
 GLuint gvPositionHandle;
+GLuint gvUVHandle;
 
-bool setupGraphics(int w, int h) {
+bool setupGraphics(int w, int h, std::string bundlePath) {
 
     gProgram = createProgram(gVertexShader, gFragmentShader);
     if (!gProgram) {
         return false;
     }
     gvPositionHandle = glGetAttribLocation(gProgram, "vPosition");
+    gvUVHandle = glGetAttribLocation(gProgram, "vUV");
     
     glViewport(0, 0, w, h);
 
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    
+    
+    std::string fullTexturePath = bundlePath + "/Candy_Person1.png";
+    std::string pngStreamString;
+    std::ifstream sourceFile( fullTexturePath.c_str() );
+    
+    //Source file loaded
+    if( !sourceFile )
+    {
+        return false;
+    }
+    
+    //Get PNG file contents
+    pngStreamString.assign( ( std::istreambuf_iterator< char >( sourceFile ) ), std::istreambuf_iterator< char >() );
+    
+    // Convert it into a data stream
+    std::istringstream pngDataStream( pngStreamString );
+    
+    GLuint texture = LoadFromStream(pngDataStream);
+    
+    glBindTexture(GL_TEXTURE_2D, texture);
     
     return true;
 }
 
-const GLfloat gSquareVertices[] = { -0.5f, -0.5f,
-                                    0.5f, -0.5f,
-                                    0.5f, 0.5f,
-                                    -0.5f, -0.5f,
-                                    0.5f, 0.5f,
-                                    -0.5f, 0.5f};
+const GLfloat gSquareVertices[] = { -0.5f, -0.5f, 0.0f, 0.0f,
+                                    0.5f, -0.5f, 1.0f, 0.0f,
+                                    0.5f, 0.5f, 1.0f, 1.0f,
+                                    -0.5f, -0.5f, 0.0f, 0.0f,
+                                    0.5f, 0.5f, 1.0f, 1.0f,
+                                    -0.5f, 0.5f, 0.0f, 1.0f };
 
 
 
@@ -127,10 +160,14 @@ void renderFrame() {
     
     glUseProgram(gProgram);
     
-    glVertexAttribPointer(gvPositionHandle, 2, GL_FLOAT, GL_FALSE, 0, gSquareVertices);
-
+    int stride = 4*sizeof(GLfloat);
+    
+    glVertexAttribPointer(gvPositionHandle, 2, GL_FLOAT, GL_FALSE, stride, &gSquareVertices[0]);
+    glVertexAttribPointer(gvUVHandle, 2, GL_FLOAT, GL_FALSE, stride, &gSquareVertices[2]);
+    
     glEnableVertexAttribArray(gvPositionHandle);
-
+    glEnableVertexAttribArray(gvUVHandle);
+    
     glDrawArrays(GL_TRIANGLES, 0, 6);
 
 }

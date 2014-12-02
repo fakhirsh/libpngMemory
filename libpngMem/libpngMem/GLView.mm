@@ -47,7 +47,14 @@
         int screenWidth = -1, screnHeight = -1;
         glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &screenWidth);
         glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &screnHeight);
-        setupGraphics(screenWidth, screnHeight);
+        
+        // Get bundle root directory.
+        NSString * bundlePath = [[NSBundle mainBundle] resourcePath];
+        const char *cpath = [bundlePath fileSystemRepresentation];
+        
+        setupGraphics(screenWidth, screnHeight, cpath);
+        
+        
         
         CADisplayLink * displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(drawView:)];
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];

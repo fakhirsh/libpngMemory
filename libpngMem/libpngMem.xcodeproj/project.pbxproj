@@ -19,6 +19,8 @@
 		0C24D8991A2D36DA00979BEC /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C24D8981A2D36DA00979BEC /* GLView.mm */; };
 		0C24D89B1A2D378300979BEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24D89A1A2D378300979BEC /* QuartzCore.framework */; };
 		0C39206C1A2D4A8D00EBE932 /* GLDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C39206A1A2D4A8D00EBE932 /* GLDemo.cpp */; };
+		0CFE80C21A2DDFF1000562B8 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE80C01A2DDFF1000562B8 /* Texture.cpp */; };
+		0CFE80C91A2E4FC2000562B8 /* Candy_Person1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFE80C81A2E4FC2000562B8 /* Candy_Person1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,9 @@
 		0C24D89A1A2D378300979BEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0C39206A1A2D4A8D00EBE932 /* GLDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLDemo.cpp; path = MyCode/GLDemo.cpp; sourceTree = "<group>"; };
 		0C39206B1A2D4A8D00EBE932 /* GLDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLDemo.h; path = MyCode/GLDemo.h; sourceTree = "<group>"; };
+		0CFE80C01A2DDFF1000562B8 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Texture.cpp; path = MyCode/Texture.cpp; sourceTree = "<group>"; };
+		0CFE80C11A2DDFF1000562B8 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = MyCode/Texture.h; sourceTree = "<group>"; };
+		0CFE80C81A2E4FC2000562B8 /* Candy_Person1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Candy_Person1.png; path = MyCode/Candy_Person1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,8 +194,11 @@
 		0C3920691A2D4A3600EBE932 /* MyCode */ = {
 			isa = PBXGroup;
 			children = (
+				0CFE80C81A2E4FC2000562B8 /* Candy_Person1.png */,
 				0C39206A1A2D4A8D00EBE932 /* GLDemo.cpp */,
 				0C39206B1A2D4A8D00EBE932 /* GLDemo.h */,
+				0CFE80C01A2DDFF1000562B8 /* Texture.cpp */,
+				0CFE80C11A2DDFF1000562B8 /* Texture.h */,
 			);
 			name = MyCode;
 			path = libpngMem;
@@ -302,6 +310,7 @@
 			files = (
 				0C24D7A61A2D334100979BEC /* Main.storyboard in Resources */,
 				0C24D7AB1A2D334100979BEC /* LaunchScreen.xib in Resources */,
+				0CFE80C91A2E4FC2000562B8 /* Candy_Person1.png in Resources */,
 				0C24D7A81A2D334100979BEC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +332,7 @@
 				0C24D7A31A2D334100979BEC /* ViewController.m in Sources */,
 				0C24D7A01A2D334100979BEC /* AppDelegate.mm in Sources */,
 				0C39206C1A2D4A8D00EBE932 /* GLDemo.cpp in Sources */,
+				0CFE80C21A2DDFF1000562B8 /* Texture.cpp in Sources */,
 				0C24D79D1A2D334100979BEC /* main.m in Sources */,
 				0C24D8991A2D36DA00979BEC /* GLView.mm in Sources */,
 			);
@@ -453,6 +463,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Development/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"/Users/fakhir/TEMP/android/libpngMemory/3rdParty/libpng-1.6.15\"",
+				);
 				INFOPLIST_FILE = libpngMem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +478,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Development/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"/Users/fakhir/TEMP/android/libpngMemory/3rdParty/libpng-1.6.15\"",
+				);
 				INFOPLIST_FILE = libpngMem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
