@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C24D79D1A2D334100979BEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24D79C1A2D334100979BEC /* main.m */; };
+		0C24D7A01A2D334100979BEC /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C24D79F1A2D334100979BEC /* AppDelegate.mm */; };
+		0C24D7A31A2D334100979BEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24D7A21A2D334100979BEC /* ViewController.m */; };
+		0C24D7A61A2D334100979BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C24D7A41A2D334100979BEC /* Main.storyboard */; };
+		0C24D7A81A2D334100979BEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C24D7A71A2D334100979BEC /* Images.xcassets */; };
+		0C24D7AB1A2D334100979BEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C24D7A91A2D334100979BEC /* LaunchScreen.xib */; };
+		0C24D7B71A2D334100979BEC /* libpngMemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24D7B61A2D334100979BEC /* libpngMemTests.m */; };
+		0C24D8931A2D369400979BEC /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24D8101A2D35E100979BEC /* libpng.a */; };
+		0C24D8951A2D36A200979BEC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24D8941A2D36A200979BEC /* OpenGLES.framework */; };
+		0C24D8991A2D36DA00979BEC /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C24D8981A2D36DA00979BEC /* GLView.mm */; };
+		0C24D89B1A2D378300979BEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C24D89A1A2D378300979BEC /* QuartzCore.framework */; };
+		0C39206C1A2D4A8D00EBE932 /* GLDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C39206A1A2D4A8D00EBE932 /* GLDemo.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C24D7B11A2D334100979BEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C24D78F1A2D334100979BEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C24D7961A2D334100979BEC;
+			remoteInfo = libpngMem;
+		};
+		0C24D80F1A2D35E100979BEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C24D80A1A2D35E000979BEC /* png.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C24D7F31A2D35E000979BEC;
+			remoteInfo = png;
+		};
+		0C24D8111A2D35E100979BEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C24D80A1A2D35E000979BEC /* png.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C24D7FE1A2D35E000979BEC;
+			remoteInfo = pngTests;
+		};
+		0C24D8911A2D368D00979BEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C24D80A1A2D35E000979BEC /* png.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C24D7F21A2D35E000979BEC;
+			remoteInfo = png;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C24D7971A2D334100979BEC /* libpngMem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libpngMem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C24D79B1A2D334100979BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C24D79C1A2D334100979BEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C24D79E1A2D334100979BEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C24D79F1A2D334100979BEC /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		0C24D7A11A2D334100979BEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C24D7A21A2D334100979BEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C24D7A51A2D334100979BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C24D7A71A2D334100979BEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0C24D7AA1A2D334100979BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0C24D7B01A2D334100979BEC /* libpngMemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libpngMemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C24D7B51A2D334100979BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C24D7B61A2D334100979BEC /* libpngMemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libpngMemTests.m; sourceTree = "<group>"; };
+		0C24D80A1A2D35E000979BEC /* png.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = png.xcodeproj; path = dependentProjects/png/png.xcodeproj; sourceTree = "<group>"; };
+		0C24D8941A2D36A200979BEC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0C24D8971A2D36D200979BEC /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		0C24D8981A2D36DA00979BEC /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		0C24D89A1A2D378300979BEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0C39206A1A2D4A8D00EBE932 /* GLDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLDemo.cpp; path = MyCode/GLDemo.cpp; sourceTree = "<group>"; };
+		0C39206B1A2D4A8D00EBE932 /* GLDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLDemo.h; path = MyCode/GLDemo.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C24D7941A2D334100979BEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C24D89B1A2D378300979BEC /* QuartzCore.framework in Frameworks */,
+				0C24D8951A2D36A200979BEC /* OpenGLES.framework in Frameworks */,
+				0C24D8931A2D369400979BEC /* libpng.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C24D7AD1A2D334100979BEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C24D78E1A2D334000979BEC = {
+			isa = PBXGroup;
+			children = (
+				0C24D7C01A2D354E00979BEC /* 3rdParty */,
+				0C3920691A2D4A3600EBE932 /* MyCode */,
+				0C24D7991A2D334100979BEC /* libpngMem */,
+				0C24D7B31A2D334100979BEC /* libpngMemTests */,
+				0C24D8961A2D36A400979BEC /* Frameworks */,
+				0C24D7981A2D334100979BEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C24D7981A2D334100979BEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D7971A2D334100979BEC /* libpngMem.app */,
+				0C24D7B01A2D334100979BEC /* libpngMemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C24D7991A2D334100979BEC /* libpngMem */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D8971A2D36D200979BEC /* GLView.h */,
+				0C24D8981A2D36DA00979BEC /* GLView.mm */,
+				0C24D79E1A2D334100979BEC /* AppDelegate.h */,
+				0C24D79F1A2D334100979BEC /* AppDelegate.mm */,
+				0C24D7A11A2D334100979BEC /* ViewController.h */,
+				0C24D7A21A2D334100979BEC /* ViewController.m */,
+				0C24D7A41A2D334100979BEC /* Main.storyboard */,
+				0C24D7A71A2D334100979BEC /* Images.xcassets */,
+				0C24D7A91A2D334100979BEC /* LaunchScreen.xib */,
+				0C24D79A1A2D334100979BEC /* Supporting Files */,
+			);
+			path = libpngMem;
+			sourceTree = "<group>";
+		};
+		0C24D79A1A2D334100979BEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D79B1A2D334100979BEC /* Info.plist */,
+				0C24D79C1A2D334100979BEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C24D7B31A2D334100979BEC /* libpngMemTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D7B61A2D334100979BEC /* libpngMemTests.m */,
+				0C24D7B41A2D334100979BEC /* Supporting Files */,
+			);
+			path = libpngMemTests;
+			sourceTree = "<group>";
+		};
+		0C24D7B41A2D334100979BEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D7B51A2D334100979BEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C24D7C01A2D354E00979BEC /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D80A1A2D35E000979BEC /* png.xcodeproj */,
+			);
+			name = 3rdParty;
+			sourceTree = "<group>";
+		};
+		0C24D80B1A2D35E000979BEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D8101A2D35E100979BEC /* libpng.a */,
+				0C24D8121A2D35E100979BEC /* pngTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C24D8961A2D36A400979BEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C24D89A1A2D378300979BEC /* QuartzCore.framework */,
+				0C24D8941A2D36A200979BEC /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C3920691A2D4A3600EBE932 /* MyCode */ = {
+			isa = PBXGroup;
+			children = (
+				0C39206A1A2D4A8D00EBE932 /* GLDemo.cpp */,
+				0C39206B1A2D4A8D00EBE932 /* GLDemo.h */,
+			);
+			name = MyCode;
+			path = libpngMem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C24D7961A2D334100979BEC /* libpngMem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C24D7BA1A2D334100979BEC /* Build configuration list for PBXNativeTarget "libpngMem" */;
+			buildPhases = (
+				0C24D7931A2D334100979BEC /* Sources */,
+				0C24D7941A2D334100979BEC /* Frameworks */,
+				0C24D7951A2D334100979BEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C24D8921A2D368D00979BEC /* PBXTargetDependency */,
+			);
+			name = libpngMem;
+			productName = libpngMem;
+			productReference = 0C24D7971A2D334100979BEC /* libpngMem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C24D7AF1A2D334100979BEC /* libpngMemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C24D7BD1A2D334100979BEC /* Build configuration list for PBXNativeTarget "libpngMemTests" */;
+			buildPhases = (
+				0C24D7AC1A2D334100979BEC /* Sources */,
+				0C24D7AD1A2D334100979BEC /* Frameworks */,
+				0C24D7AE1A2D334100979BEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C24D7B21A2D334100979BEC /* PBXTargetDependency */,
+			);
+			name = libpngMemTests;
+			productName = libpngMemTests;
+			productReference = 0C24D7B01A2D334100979BEC /* libpngMemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C24D78F1A2D334100979BEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Fakhir Shaheen";
+				TargetAttributes = {
+					0C24D7961A2D334100979BEC = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					0C24D7AF1A2D334100979BEC = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 0C24D7961A2D334100979BEC;
+					};
+				};
+			};
+			buildConfigurationList = 0C24D7921A2D334100979BEC /* Build configuration list for PBXProject "libpngMem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C24D78E1A2D334000979BEC;
+			productRefGroup = 0C24D7981A2D334100979BEC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0C24D80B1A2D35E000979BEC /* Products */;
+					ProjectRef = 0C24D80A1A2D35E000979BEC /* png.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0C24D7961A2D334100979BEC /* libpngMem */,
+				0C24D7AF1A2D334100979BEC /* libpngMemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0C24D8101A2D35E100979BEC /* libpng.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpng.a;
+			remoteRef = 0C24D80F1A2D35E100979BEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C24D8121A2D35E100979BEC /* pngTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = pngTests.xctest;
+			remoteRef = 0C24D8111A2D35E100979BEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C24D7951A2D334100979BEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C24D7A61A2D334100979BEC /* Main.storyboard in Resources */,
+				0C24D7AB1A2D334100979BEC /* LaunchScreen.xib in Resources */,
+				0C24D7A81A2D334100979BEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C24D7AE1A2D334100979BEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C24D7931A2D334100979BEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C24D7A31A2D334100979BEC /* ViewController.m in Sources */,
+				0C24D7A01A2D334100979BEC /* AppDelegate.mm in Sources */,
+				0C39206C1A2D4A8D00EBE932 /* GLDemo.cpp in Sources */,
+				0C24D79D1A2D334100979BEC /* main.m in Sources */,
+				0C24D8991A2D36DA00979BEC /* GLView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C24D7AC1A2D334100979BEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C24D7B71A2D334100979BEC /* libpngMemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C24D7B21A2D334100979BEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C24D7961A2D334100979BEC /* libpngMem */;
+			targetProxy = 0C24D7B11A2D334100979BEC /* PBXContainerItemProxy */;
+		};
+		0C24D8921A2D368D00979BEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = png;
+			targetProxy = 0C24D8911A2D368D00979BEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C24D7A41A2D334100979BEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C24D7A51A2D334100979BEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C24D7A91A2D334100979BEC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C24D7AA1A2D334100979BEC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C24D7B81A2D334100979BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C24D7B91A2D334100979BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C24D7BB1A2D334100979BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = libpngMem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C24D7BC1A2D334100979BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = libpngMem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0C24D7BE1A2D334100979BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = libpngMemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libpngMem.app/libpngMem";
+			};
+			name = Debug;
+		};
+		0C24D7BF1A2D334100979BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = libpngMemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libpngMem.app/libpngMem";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C24D7921A2D334100979BEC /* Build configuration list for PBXProject "libpngMem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C24D7B81A2D334100979BEC /* Debug */,
+				0C24D7B91A2D334100979BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C24D7BA1A2D334100979BEC /* Build configuration list for PBXNativeTarget "libpngMem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C24D7BB1A2D334100979BEC /* Debug */,
+				0C24D7BC1A2D334100979BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C24D7BD1A2D334100979BEC /* Build configuration list for PBXNativeTarget "libpngMemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C24D7BE1A2D334100979BEC /* Debug */,
+				0C24D7BF1A2D334100979BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C24D78F1A2D334100979BEC /* Project object */;
+}
